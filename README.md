@@ -1,4 +1,4 @@
-# 🧬 Q-MediScan: Quantum-Enhanced Breast Cancer Detection
+# 🧬 QuantScan: Quantum-Enhanced Breast Cancer Detection
 
 [![Quantum Computing](https://img.shields.io/badge/Quantum-Computing-blueviolet)](https://quantum-computing.ibm.com/)
 [![Classiq SDK](https://img.shields.io/badge/Powered%20by-Classiq%20SDK-purple)](https://classiq.io)
@@ -7,7 +7,7 @@
 
 > **Pioneering quantum machine learning for early cancer detection with measurable quantum advantage**
 
-Q-MediScan leverages advanced quantum computing to detect breast cancer patterns that classical AI cannot see, potentially saving lives through earlier detection.
+QuantScan leverages advanced quantum computing to detect breast cancer patterns that classical AI cannot see, potentially saving lives through earlier detection.
 
 ---
 
