@@ -1,0 +1,352 @@
+/* Soft & Aesthetic Healthcare Theme */
+
+/* Global Soft Theme Styles */
+body {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 25%, #FDECEF 50%, #f0fdfa 75%, #ffffff 100%);
+  min-height: 100vh;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Comfortable Button Styles */
+.btn-primary {
+  @apply bg-gradient-to-r from-blue-500 to-teal-500 text-white font-medium px-6 py-3 rounded-xl shadow-blue hover:shadow-large transition-all duration-300 hover:scale-[1.02];
+}
+
+.btn-secondary {
+  @apply bg-gradient-to-r from-teal-500 to-green-500 text-white font-medium px-6 py-3 rounded-xl shadow-teal hover:shadow-large transition-all duration-300;
+}
+
+.btn-accent {
+  @apply bg-gradient-to-r from-pink-300 to-pink-400 text-slate-700 font-medium px-6 py-3 rounded-xl shadow-pink hover:shadow-large transition-all duration-300;
+}
+
+.btn-outline {
+  @apply border-2 border-blue-300 text-blue-600 font-medium px-6 py-3 rounded-xl hover:bg-blue-50 hover:border-blue-400 transition-all duration-300;
+}
+
+.btn-soft {
+  @apply bg-white text-blue-600 font-medium px-6 py-3 rounded-xl shadow-soft hover:shadow-medium border border-blue-200 transition-all duration-300;
+}
+
+/* Card Styles */
+.card {
+  @apply bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-soft border border-slate-200/50 hover:shadow-medium transition-all duration-300;
+}
+
+.card-soft {
+  @apply bg-gradient-card rounded-2xl p-6 shadow-comfortable border border-blue-100 hover:shadow-blue transition-all duration-300;
+}
+
+.card-healthcare {
+  @apply bg-gradient-healthcare rounded-2xl p-6 shadow-comfortable border border-healthcare-neutral-medium/30 transition-all duration-300;
+}
+
+/* Glass Effect - Softer */
+.glass {
+  @apply bg-white/70 backdrop-blur-md border border-white/30 shadow-comfortable;
+}
+
+.glass-blue {
+  @apply bg-gradient-to-br from-white/80 to-blue-50/80 backdrop-blur-md border border-blue-200/50 shadow-blue;
+}
+
+.glass-teal {
+  @apply bg-gradient-to-br from-white/80 to-teal-50/80 backdrop-blur-md border border-teal-200/50 shadow-teal;
+}
+
+/* Text Gradients - Softer */
+.text-gradient-primary {
+  @apply bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent;
+}
+
+.text-gradient-secondary {
+  @apply bg-gradient-to-r from-teal-600 to-green-500 bg-clip-text text-transparent;
+}
+
+.text-gradient-accent {
+  @apply bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent;
+}
+
+.text-gradient-healthcare {
+  @apply bg-gradient-to-r from-blue-700 to-teal-600 bg-clip-text text-transparent;
+}
+
+/* Navigation Styles */
+.nav-link {
+  @apply text-slate-600 hover:text-blue-600 font-medium transition-colors duration-200 relative;
+}
+
+.nav-link::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-teal-500 transition-all duration-300;
+}
+
+.nav-link:hover::after {
+  @apply w-full;
+}
+
+.nav-link.active {
+  @apply text-blue-600;
+}
+
+.nav-link.active::after {
+  @apply w-full;
+}
+
+/* Input Styles */
+.input-field {
+  @apply w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-blue-300 focus:ring-2 focus:ring-blue-100 bg-white/90 backdrop-blur-sm transition-all duration-200;
+}
+
+.input-field:focus {
+  @apply shadow-blue;
+}
+
+/* Badge Styles */
+.badge-primary {
+  @apply bg-gradient-to-r from-blue-500 to-teal-500 text-white px-3 py-1 rounded-full text-sm font-medium shadow-soft;
+}
+
+.badge-secondary {
+  @apply bg-gradient-to-r from-teal-500 to-green-500 text-white px-3 py-1 rounded-full text-sm font-medium shadow-soft;
+}
+
+.badge-soft {
+  @apply bg-white text-blue-600 px-3 py-1 rounded-full text-sm font-medium border border-blue-200 shadow-soft;
+}
+
+.badge-pink {
+  @apply bg-gradient-soft-pink text-pink-700 px-3 py-1 rounded-full text-sm font-medium border border-pink-200 shadow-soft;
+}
+
+/* Progress Bar */
+.progress-bar {
+  @apply w-full bg-slate-100 rounded-full h-2 overflow-hidden;
+}
+
+.progress-fill {
+  @apply h-full bg-gradient-to-r from-blue-500 to-teal-500 rounded-full transition-all duration-500;
+}
+
+/* Hover Effects - Gentler */
+.hover-lift {
+  @apply transition-transform duration-300 hover:transform hover:-translate-y-1 hover:shadow-medium;
+}
+
+.hover-glow {
+  @apply transition-all duration-300 hover:shadow-blue;
+}
+
+.hover-scale {
+  @apply transition-transform duration-300 hover:scale-[1.02];
+}
+
+.hover-soft {
+  @apply transition-all duration-300 hover:bg-blue-50 hover:shadow-soft;
+}
+
+/* Animation Classes */
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.8s ease-out;
+}
+
+.animate-gentle-bounce {
+  animation: gentleBounce 3s infinite;
+}
+
+.animate-soft-pulse {
+  animation: softPulse 3s infinite;
+}
+
+.animate-gentle-float {
+  animation: gentleFloat 4s ease-in-out infinite;
+}
+
+/* Gradient Backgrounds */
+.bg-hero {
+  @apply bg-gradient-hero;
+}
+
+.bg-section {
+  @apply bg-gradient-to-br from-white to-blue-50/50;
+}
+
+.bg-feature {
+  @apply bg-gradient-to-br from-blue-50/30 to-teal-50/30;
+}
+
+.bg-healthcare {
+  @apply bg-gradient-healthcare;
+}
+
+.bg-soft-blue {
+  @apply bg-gradient-soft-blue;
+}
+
+.bg-soft-pink {
+  @apply bg-gradient-soft-pink;
+}
+
+.bg-soft-teal {
+  @apply bg-gradient-soft-teal;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-50;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gradient-to-b from-blue-300 to-teal-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply from-blue-400 to-teal-400;
+}
+
+/* Selection */
+::selection {
+  @apply bg-blue-100 text-blue-800;
+}
+
+/* Focus Styles */
+.focus-ring {
+  @apply focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2 focus:ring-offset-white;
+}
+
+/* Loading Spinner */
+.spinner {
+  @apply animate-spin rounded-full border-4 border-blue-100 border-t-blue-500;
+}
+
+/* Tooltip */
+.tooltip {
+  @apply absolute z-50 px-3 py-2 text-sm text-white bg-gradient-to-r from-blue-600 to-teal-600 rounded-lg shadow-large opacity-0 transition-opacity duration-200;
+}
+
+.tooltip.show {
+  @apply opacity-100;
+}
+
+/* Status Indicators */
+.status-success {
+  @apply bg-gradient-to-r from-green-400 to-green-500 text-white;
+}
+
+.status-warning {
+  @apply bg-gradient-to-r from-orange-400 to-orange-500 text-white;
+}
+
+.status-error {
+  @apply bg-gradient-to-r from-red-400 to-red-500 text-white;
+}
+
+.status-info {
+  @apply bg-gradient-to-r from-blue-400 to-blue-500 text-white;
+}
+
+/* Healthcare Specific Styles */
+.healthcare-card {
+  @apply bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-comfortable border border-healthcare-neutral-medium/20 hover:shadow-blue transition-all duration-300;
+}
+
+.medical-badge {
+  @apply bg-gradient-soft-pink text-pink-700 px-3 py-1 rounded-full text-sm font-medium border border-pink-200;
+}
+
+.quantum-badge {
+  @apply bg-gradient-soft-blue text-blue-700 px-3 py-1 rounded-full text-sm font-medium border border-blue-200;
+}
+
+.teal-badge {
+  @apply bg-gradient-soft-teal text-teal-700 px-3 py-1 rounded-full text-sm font-medium border border-teal-200;
+}
+
+/* Icon Containers */
+.icon-container-blue {
+  @apply w-12 h-12 bg-gradient-to-br from-blue-100 to-blue-200 rounded-xl flex items-center justify-center shadow-soft;
+}
+
+.icon-container-teal {
+  @apply w-12 h-12 bg-gradient-to-br from-teal-100 to-teal-200 rounded-xl flex items-center justify-center shadow-soft;
+}
+
+.icon-container-pink {
+  @apply w-12 h-12 bg-gradient-to-br from-pink-100 to-pink-200 rounded-xl flex items-center justify-center shadow-soft;
+}
+
+.icon-container-green {
+  @apply w-12 h-12 bg-gradient-to-br from-green-100 to-green-200 rounded-xl flex items-center justify-center shadow-soft;
+}
+
+/* Responsive Design Helpers */
+@media (max-width: 768px) {
+  .card,
+  .card-soft,
+  .card-healthcare {
+    @apply p-4 rounded-xl;
+  }
+  
+  .btn-primary,
+  .btn-secondary,
+  .btn-accent,
+  .btn-soft {
+    @apply px-4 py-2 text-sm;
+  }
+}
+
+/* Dark mode overrides (softer dark theme) */
+@media (prefers-color-scheme: dark) {
+  .dark body {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 25%, #334155 50%, #475569 75%, #64748b 100%);
+  }
+  
+  .dark .card,
+  .dark .card-soft,
+  .dark .card-healthcare {
+    @apply bg-slate-800/90 border-slate-700/50;
+  }
+  
+  .dark .glass,
+  .dark .glass-blue,
+  .dark .glass-teal {
+    @apply bg-slate-800/70 border-slate-700/50;
+  }
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+  .animate-gentle-bounce,
+  .animate-soft-pulse,
+  .animate-gentle-float {
+    animation: none;
+  }
+  
+  .hover-lift,
+  .hover-scale {
+    transform: none;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .card,
+  .card-soft,
+  .card-healthcare {
+    @apply border-2 border-slate-400;
+  }
+  
+  .btn-primary,
+  .btn-secondary,
+  .btn-accent {
+    @apply border-2 border-slate-600;
+  }
+}

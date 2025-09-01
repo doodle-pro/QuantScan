@@ -1,0 +1,181 @@
+/* Medical Purple Theme - Custom Styles */
+
+/* Override gradient text with medical purple theme */
+.gradient-text {
+  background: linear-gradient(135deg, #8B5CF6 0%, #A855F7 50%, #EC4899 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+.gradient-text-soft {
+  background: linear-gradient(135deg, #c084fc 0%, #f472b6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Medical Purple Button Styles */
+.btn-primary {
+  background: linear-gradient(135deg, #8B5CF6 0%, #A855F7 100%) !important;
+  color: white !important;
+  padding: 0.75rem 1.5rem !important;
+  border-radius: 0.5rem !important;
+  font-weight: 600 !important;
+  transition: all 0.2s !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #7c3aed 0%, #9333ea 100%) !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1) !important;
+  transform: translateY(-1px) !important;
+}
+
+.btn-accent {
+  background: linear-gradient(135deg, #EC4899 0%, #f472b6 100%) !important;
+  color: white !important;
+  padding: 0.75rem 1.5rem !important;
+  border-radius: 0.5rem !important;
+  font-weight: 600 !important;
+  transition: all 0.2s !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+}
+
+.btn-accent:hover {
+  background: linear-gradient(135deg, #db2777 0%, #ec4899 100%) !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1) !important;
+  transform: translateY(-1px) !important;
+}
+
+/* Medical Purple Progress Bars */
+.progress-fill {
+  background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%) !important;
+  height: 100% !important;
+  transition: all 0.5s ease-out !important;
+}
+
+/* Medical Purple Quantum Gates */
+.quantum-gate.active {
+  background: linear-gradient(135deg, #8B5CF6 0%, #A855F7 100%) !important;
+  color: white !important;
+  border: 2px solid transparent !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Medical Purple Focus Styles */
+.focus-ring:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 2px #8B5CF6 !important;
+  border-radius: 0.375rem !important;
+}
+
+/* Medical Purple Glow Animation */
+@keyframes medicalGlow {
+  0% { 
+    box-shadow: 0 0 5px rgba(139, 92, 246, 0.5), 0 0 10px rgba(236, 72, 153, 0.3);
+  }
+  100% { 
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.8), 0 0 30px rgba(236, 72, 153, 0.5);
+  }
+}
+
+.medical-glow {
+  animation: medicalGlow 2s ease-in-out infinite alternate;
+}
+
+/* Soft Medical Card Styles */
+.medical-card {
+  background: linear-gradient(135deg, #faf5ff 0%, #fdf2f8 100%) !important;
+  border: 1px solid #e9d5ff !important;
+  border-radius: 0.75rem !important;
+  padding: 1.5rem !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.3s !important;
+}
+
+.medical-card:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Medical Purple Scrollbar */
+::-webkit-scrollbar-track {
+  background: #f3e8ff !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c084fc !important;
+  border-radius: 9999px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a855f7 !important;
+}
+
+/* Medical Purple Glass Effect */
+.glass {
+  background: rgba(139, 92, 246, 0.1) !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(139, 92, 246, 0.2) !important;
+}
+
+.dark .glass {
+  background: rgba(139, 92, 246, 0.1) !important;
+  border: 1px solid rgba(139, 92, 246, 0.2) !important;
+}
+
+/* Medical Risk Indicators with Purple Theme */
+.risk-high {
+  background: rgba(239, 68, 68, 0.1) !important;
+  color: #dc2626 !important;
+}
+
+.risk-medium {
+  background: rgba(245, 158, 11, 0.1) !important;
+  color: #d97706 !important;
+}
+
+.risk-low {
+  background: rgba(16, 185, 129, 0.1) !important;
+  color: #059669 !important;
+}
+
+/* Medical Purple Spinner */
+.spinner {
+  border: 2px solid #f3e8ff !important;
+  border-top: 2px solid #8B5CF6 !important;
+  border-radius: 50% !important;
+  animation: spin 1s linear infinite !important;
+}
+
+/* Soft Medical Backgrounds */
+.bg-medical-soft {
+  background: linear-gradient(135deg, #faf5ff 0%, #fdf2f8 50%, #fefefe 100%) !important;
+}
+
+.bg-medical-gradient {
+  background: linear-gradient(135deg, #8B5CF6 0%, #A855F7 30%, #EC4899 70%, #f472b6 100%) !important;
+}
+
+/* Medical Purple Text Colors */
+.text-medical-primary {
+  color: #8B5CF6 !important;
+}
+
+.text-medical-secondary {
+  color: #A855F7 !important;
+}
+
+.text-medical-accent {
+  color: #EC4899 !important;
+}
+
+/* Medical Purple Border Colors */
+.border-medical-primary {
+  border-color: #8B5CF6 !important;
+}
+
+.border-medical-soft {
+  border-color: #e9d5ff !important;
+}
